@@ -1,6 +1,6 @@
 import numpy as np
 import scipy
-from numba import jit, int64, boolean
+#from numba import jit, int64, boolean
 
 import utils
 import sklearn.metrics as sm
@@ -140,7 +140,7 @@ def classification_accuracy(P, Y, bg_class=None, **kwargs):
         return clf_(P, Y, bg_class)
 
 
-@jit("float64(int64[:], int64[:], boolean)")
+#@jit("float64(int64[:], int64[:], boolean)")
 def levenstein_(p,y, norm=False):
     m_row = len(p)    
     n_col = len(y)
