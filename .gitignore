@@ -1,0 +1,4 @@
+venv
+predictions/50Salads/mid_video_SVM
+features/50Salads/SpatialCNN_mid
+code/__pycache__
